@@ -84,11 +84,13 @@ This tutorial provides a comprehensive guide to setting up a Virtual Machine Net
 ![276385531-474bfaac-5695-43dc-9f55-63d2ded0ccba](https://github.com/gabe-IT/azure-vm/assets/148400020/059efc9e-2b83-4e27-85ef-6ea93cc63ab2)
 4. Heading back to the Microsoft Azure Account, we'll go to the VM-2's Network Security Group (NSG) in order to stop the traffic. In VM-2-nsg, we'll go to inbound security rules and create a security rule that denies ICMPs. Click on Add to open a right side pop up to set the rule and dot in Deny under action and ICMP under Protocol. Set the Priority higher than 300 (lower numbers have higher priority) and name the rule DENY_ICMP_PING then click Add to finish
    ![276388246-1d628322-94f9-479f-ad6d-cb2d2e3b6dba](https://github.com/gabe-IT/azure-vm/assets/148400020/072ba408-e679-42c2-a2cf-cfc8a9c0884d)
+5. Once completed, you'll notice the message "Request timed out" will start displaying in Powershell in VM-1, meaning ICMP packets can no longer be transferred due to our security rule.
+   ![lQBOBiz](https://github.com/gabe-IT/azure-vm/assets/148400020/38bdc96c-8f14-4413-99f1-0d84a8d0f770)
 
-5. **Ping a public website** like google.com from VM-1. Monitor the traffic in Wireshark.
-6. **Start a continuous ping** to VM-2 and note the traffic in Wireshark.
-7. **Alter VM-2's Network Security Group** to block ICMP traffic. Observe the "Request timed out" message in VM-1.
-8. **Re-enable ICMP traffic** and watch the resumption of ping responses in Wireshark.
+6. **Ping a public website** like google.com from VM-1. Monitor the traffic in Wireshark.
+7. **Start a continuous ping** to VM-2 and note the traffic in Wireshark.
+8. **Alter VM-2's Network Security Group** to block ICMP traffic. Observe the "Request timed out" message in VM-1.
+9. **Re-enable ICMP traffic** and watch the resumption of ping responses in Wireshark.
 
 ### Observing SSH Traffic
 
