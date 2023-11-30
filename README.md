@@ -102,21 +102,26 @@ This tutorial provides a comprehensive guide to setting up a Virtual Machine Net
 1. **Filter for SSH traffic** in Wireshark.
 2. **SSH into VM-2** from VM-1. Execute commands and monitor the SSH traffic in Wireshark.
 3. **Terminate the SSH session** when done.
+![wN6O6w6](https://github.com/gabe-IT/azure-vm/assets/148400020/2c2238e9-8dd5-47cc-a3a9-c7cf7a719a71)
+
 
 ### Observing DHCP Traffic
 
 1. **Filter Wireshark for DHCP traffic**.
 2. **Renew the IP address** of VM-1 using `ipconfig /renew`. Track the DHCP traffic in Wireshark.
+![image](https://github.com/gabe-IT/azure-vm/assets/148400020/5d0c5274-e190-43ce-a2cf-aab3f0d602ce)
 
 ### Observing DNS Traffic
 
 1. **Filter for DNS traffic** in Wireshark.
 2. **Use nslookup** in VM-1 for domains like google.com. Observe the DNS queries in Wireshark.
+![image](https://github.com/gabe-IT/azure-vm/assets/148400020/f3306136-9a02-42a2-a735-703a655b42cc)
 
 ### Observing RDP Traffic
 
 1. **Filter for RDP traffic** in Wireshark (`tcp.port == 3389`).
 2. **Note the continuous RDP traffic** and understand its nature as a live stream protocol.
+![image](https://github.com/gabe-IT/azure-vm/assets/148400020/3900ca7e-051a-4694-a57f-de8a9cd4cef1)
 
 ## Lab Cleanup
 
