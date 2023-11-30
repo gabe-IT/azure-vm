@@ -31,6 +31,7 @@ This tutorial provides a comprehensive guide to setting up a Virtual Machine Net
    - Create a Resource Group named `RG-VM`.
    - Note the *Region* for later use.
    - Click *Review + Create* to finalize.
+![tAFcGdO](https://github.com/gabe-IT/azure-vm/assets/148400020/b3a15de4-a90f-44eb-ac61-1c25f75ee499)
 
 2. **Virtual Machine 1 using Windows 10**
    - Go to *Virtual Machines* in Azure Services.
@@ -38,14 +39,22 @@ This tutorial provides a comprehensive guide to setting up a Virtual Machine Net
    - Name the VM `VM-1`. Ensure the Region matches that of `RG-VM`.
    - Choose *Windows 10 Pro, Version 22H2, x64 Gen2* as the Operating System.
    - Select *Standard_E2s_V3* for Size (2 vCPUs, 16 GB RAM).
+     ![1g6BE7q](https://github.com/gabe-IT/azure-vm/assets/148400020/4f6ed5a1-42ee-4ad2-9fe1-be56154855a2)
+
    - Set username and password for VM access.
+     ![hDnUuTG](https://github.com/gabe-IT/azure-vm/assets/148400020/940e434d-bb0d-40bd-9650-d3d5f4fba78a)
+
    - Notice the *Virtual Network* automatically created.
+     ![8jSSyTT](https://github.com/gabe-IT/azure-vm/assets/148400020/3c48d908-8f06-466b-a540-2636353a94ac)
+
    - Proceed to *Review + Create* and deploy the VM.
 
 3. **Virtual Machine 2 using Ubuntu**
    - Repeat the process for VM-1.
    - Name this VM `VM-2` and choose *Ubuntu Server 20.04 LTS x64 Gen2* as the OS.
    - For authentication, select Password instead of SSH public key.
+     ![JbinPaA](https://github.com/gabe-IT/azure-vm/assets/148400020/e6a9809b-80c5-4ff6-b411-c67253864bc4)
+
 
 ### Logging into a Virtual Machine using Remote Desktop Connection
 
